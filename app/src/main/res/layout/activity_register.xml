@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".Register">
+    tools:context=".Register"
+    android:descendantFocusability="beforeDescendants">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,7 +69,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:layout_marginBottom="15sp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/nameREG"
