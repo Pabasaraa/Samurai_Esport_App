@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
     android:fillViewport="true"
-    tools:context=".Register"
-    android:descendantFocusability="beforeDescendants">
+    tools:context=".Register">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +31,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/sign_up_imgREG"
+                    android:id="@+id/logoReg"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginLeft="-55sp"
@@ -39,7 +40,7 @@
                     android:transitionName="logo_img" />
 
                 <TextView
-                    android:id="@+id/new_user_textREG"
+                    android:id="@+id/titleReg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-55sp"
@@ -52,7 +53,7 @@
                     android:transitionName="name" />
 
                 <TextView
-                    android:id="@+id/sign_up_textREG"
+                    android:id="@+id/sloganReg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/never_settle_down"
@@ -69,12 +70,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15sp"
                     android:layout_marginBottom="15sp"
-                    android:orientation="vertical"
                     android:focusable="true"
-                    android:focusableInTouchMode="true">
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/nameREG"
+                        android:id="@+id/nameReg"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -89,7 +90,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/usernameREG"
+                        android:id="@+id/usernameReg"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -106,7 +107,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/emailREG"
+                        android:id="@+id/emailReg"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -122,7 +123,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/passwordREG"
+                        android:id="@+id/passwordReg"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -131,17 +132,17 @@
                         android:hint="Password"
                         android:paddingTop="5sp"
                         android:transitionName="password"
-                        app:passwordToggleEnabled="true">
+                        app:passwordToggleEnabled="true"
+                        android:inputType="textPassword">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPassword" />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <Button
-                        android:id="@+id/sign_upREG"
+                        android:id="@+id/signupBtnReg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10sp"
@@ -153,7 +154,7 @@
                         android:transitionName="signIn" />
 
                     <Button
-                        android:id="@+id/sign_inREG"
+                        android:id="@+id/signinBtnReg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
