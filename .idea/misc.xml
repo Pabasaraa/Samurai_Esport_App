@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/apps/Samurai_Esport/app/src/main/res/font/fontfami.xml" value="0.40208333333333335" />
+        <entry key="..\:/apps/Samurai_Esport/app/src/main/res/layout/activity_dashboard.xml" value="0.371875" />
         <entry key="..\:/apps/Samurai_Esport/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/apps/Samurai_Esport/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/apps/Samurai_Esport/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/apps/Samurai_Esport/app/src/main/res/layout/header.xml" value="0.371875" />
+        <entry key="..\:/apps/Samurai_Esport/app/src/main/res/layout/toolbar.xml" value="0.371875" />
+        <entry key="..\:/apps/Samurai_Esport/app/src/main/res/menu/nav_menu.xml" value="0.371875" />
       </map>
     </option>
   </component>

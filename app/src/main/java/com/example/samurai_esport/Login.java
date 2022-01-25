@@ -57,6 +57,15 @@ public class Login extends AppCompatActivity {
 //                startActivity(intent);
             }
         });
+
+        signInLI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Dashboard.class);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                startActivity(intent);
+            }
+        });
     }
 
 //    @Override

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="bottom"
+    android:padding="20sp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_samurai_sword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samurai Esport"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:fontFamily="@font/ninja_attack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Legends aren't born they're built"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/never_settle_down"
+        android:paddingTop="2sp"/>
+
+</LinearLayout>
